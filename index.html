@@ -1,0 +1,664 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Taragals - NFT Collection on Taraxa</title>
+   <meta name="description" content="The official Soulmates Gals NFT collection—1,000 unique digital companions within the Taraxa ecosystem.">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-style-mode" content="1">
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/preloader.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.css">
+   <link rel="stylesheet" href="assets/css/animate.min.css">
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/backToTop.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+   <link rel="stylesheet" href="assets/css/flaticon.css">
+   <link rel="stylesheet" href="assets/css/default.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <style>
+     /* Green and white theme */
+     :root {
+       --primary-color: #00a651;
+       --secondary-color: #ffffff;
+     }
+     
+     .fill-btn {
+       background-color: var(--primary-color);
+       color: var(--secondary-color);
+     }
+     
+     .fill-btn:hover {
+       background-color: #008c44;
+     }
+     
+     .section-main-title1 {
+       color: var(--primary-color);
+     }
+     
+     .header-main1 {
+       background-color: transparent;
+     }
+     
+     /* Center the menu items */
+     .main-menu ul {
+       display: flex;
+       justify-content: center;
+       width: 100%;
+     }
+
+     .main-menu ul li {
+       margin: 0 15px;
+     }
+
+     .header-main-right {
+       display: flex;
+       justify-content: center;
+     }
+
+     .main-menu {
+       flex-grow: 1;
+     }
+
+     /* Logo resizing to 40px */
+     .header-logo img {
+       max-height: 150px;
+       width: auto;
+     }
+
+     .header-logo {
+       display: flex;
+       align-items: center;
+       justify-content: flex-end; /* Align logo to the right side of its container */
+       padding-right: 0px; /* Add some padding to the right */
+     }
+
+     .offset-logo img {
+       max-height: 80px;
+       width: auto;
+     }
+
+     /* Footer logo size - FIXED */
+     .footer-logo img {
+       max-height: 50px;
+       width: auto;
+     }
+
+     .main-menu ul li a:hover {
+       color: var(--primary-color);
+       transition: color 0.3s ease;
+     }
+
+     .header1.oc-transparent-header {
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       z-index: 999;
+     }
+     
+     .banner-area1 {
+       background-color: #f8fff8;
+     }
+     
+     .footer1-bg {
+       background-color: var(--primary-color);
+       color: var(--secondary-color);
+     }
+     
+     .backers-section {
+       padding: 80px 0;
+       background-color: #f8fff8;
+     }
+     
+     .backer-logo {
+       max-height: 100px;
+       margin: 20px;
+     }
+     
+     .use-of-funds {
+       padding: 80px 0;
+       background-color: #ffffff;
+     }
+     
+     .fund-item {
+       margin-bottom: 30px;
+       padding: 20px;
+       border-radius: 10px;
+       background-color: #f8fff8;
+       border-left: 4px solid var(--primary-color);
+     }
+     
+     .buy-altura-btn {
+       background-color: #ff6b35;
+       color: white;
+       padding: 15px 30px;
+       font-size: 18px;
+       font-weight: 600;
+       border-radius: 8px;
+       display: inline-block;
+       margin-top: 20px;
+       text-decoration: none;
+       transition: all 0.3s ease;
+     }
+     
+     .buy-altura-btn:hover {
+       background-color: #e55a2b;
+       transform: translateY(-3px);
+       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     }
+     
+     .apply-funding-btn {
+       background-color: #00a651;
+       color: white;
+       padding: 15px 30px;
+       font-size: 18px;
+       font-weight: 600;
+       border-radius: 8px;
+       display: inline-block;
+       margin-top: 20px;
+       margin-left: 15px;
+       text-decoration: none;
+       transition: all 0.3s ease;
+     }
+     
+     .apply-funding-btn:hover {
+       background-color: #008c44;
+       transform: translateY(-3px);
+       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     }
+     
+     /* Change Digital Companions to green */
+     .font-prata span {
+       color: var(--primary-color);
+     }
+
+     /* Banner image positioning and styling - UPDATED with better spacing and varied sizes */
+     .oc-banner-img {
+       position: relative;
+       width: 100%;
+       height: 750px; /* Increased height to accommodate larger images */
+       margin-top: 30px;
+     }
+
+     .oc-banner-img-1,
+     .oc-banner-img-2,
+     .oc-banner-img-3,
+     .oc-banner-img-4 {
+       position: absolute;
+       transition: transform 0.3s ease;
+     }
+
+     .oc-banner-img-1 {
+       top: 0px;
+       left: -100px;
+       width: 280px; /* Larger size */
+       height: 280px;
+       z-index: 4;
+     }
+
+     .oc-banner-img-2 {
+       top: 10px;
+       left: -100px;
+       width: 260px;
+       height: 260px;
+       z-index: 3;
+     }
+
+     .oc-banner-img-3 {
+       bottom: 180px; /* Increased spacing */
+       left: 180px; /* Increased spacing */
+       width: 240px;
+       height: 240px;
+       z-index: 2;
+     }
+
+     .oc-banner-img-4 {
+       bottom: 0px;
+       right: -1200px; /* Increased spacing */
+       width: 300px; /* Largest size */
+       height: 300px;
+       z-index: 1;
+     }
+
+     .oc-banner-img img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 15px;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     }
+
+     /* Hover effects */
+     .oc-banner-img-1:hover,
+     .oc-banner-img-2:hover,
+     .oc-banner-img-3:hover,
+     .oc-banner-img-4:hover {
+       transform: translateY(-10px);
+       z-index: 5;
+     }
+
+     /* Footer styling */
+     .footer-area {
+       background-color: var(--primary-color);
+       color: white;
+       padding: 80px 0 30px;
+     }
+
+     .footer-widget h4 {
+       color: white;
+       margin-bottom: 25px;
+       font-weight: 600;
+     }
+
+     .footer-widget ul li {
+       margin-bottom: 10px;
+     }
+
+     .footer-widget ul li a {
+       color: rgba(255, 255, 255, 0.8);
+       transition: all 0.3s ease;
+     }
+
+     .footer-widget ul li a:hover {
+       color: white;
+       padding-left: 5px;
+     }
+
+     .footer-social a {
+       display: inline-block;
+       width: 40px;
+       height: 40px;
+       line-height: 40px;
+       text-align: center;
+       background: rgba(255, 255, 255, 0.1);
+       color: white;
+       border-radius: 50%;
+       margin-right: 10px;
+       transition: all 0.3s ease;
+     }
+
+     .footer-social a:hover {
+       background: white;
+       color: var(--primary-color);
+     }
+
+     .copyright {
+       border-top: 1px solid rgba(255, 255, 255, 0.1);
+       padding-top: 20px;
+       margin-top: 50px;
+     }
+
+
+     }
+   </style>
+</head>
+
+<body class="body-bg">
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+   <!-- Add your site or application content here -->
+   <main>
+      <!-- header area start  -->
+      <header class="header1 oc-transparent-header">
+         <div id="header-sticky" class="header-main header-main1">
+            <div class="container header-container">
+               <div class="row align-items-center">
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-4">
+                     <div class="header-main-left">
+                        <div class="header-logo header1-logo">
+                              <a href="https://www.taragals.com/" target="_blank" class="logo-bb">
+                                <img src="assets/img/logo/taragals-logo.png" alt="logo-img" style="max-height: 50px; width: auto;">
+                              </a>
+                              <a href="https://www.taragals.com/" target="_blank" class="logo-bw">
+                                <img src="assets/img/logo/taragals-logo.png" alt="logo-img" style="max-height: 50px; width: auto;">
+                              </a>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-8 col-8">
+                     <div class="header-main-right">
+                        <div class="main-menu main-menu1 d-none d-lg-block">
+                           <nav id="mobile-menu">
+                              <ul>
+                                 <li><a href="https://www.taragals.com/" target="_blank">Home</a></li>
+                                 <li><a href="#" target="_blank">Marketplace</a></li>
+                                 <li><a href="https://www.meridianfinance.net/" target="_blank">Meridian</a></li>
+                                 <li><a href="https://www.taraswap.app/#/swap" target="_blank">TaraSwap</a></li>
+                                 <li><a href="https://app.laraprotocol.com/" target="_blank">LaraProtocol</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+     
+                        <div class="header-btn ml-20 d-none d-lg-inline-block">
+                           <a href="#" target="_blank" class="fill-btn">Get your Gal</a>
+                        </div>
+                        
+                        <div class="header-btn ml-20 d-none d-lg-inline-block">
+                           <a href="#" target="_blank" class="fill-btn">Apply for funding</a>
+                        </div>
+                     
+                        <div class="menu-bar d-xl-none ml-20">
+                           <a class="side-toggle" href="javascript:void(0)">
+                              <div class="bar-icon">
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header area end -->
+
+      <!-- side toggle start -->
+      <div class="fix">
+         <div class="side-info">
+            <div class="side-info-content">
+               <div class="offset-widget offset-logo mb-40">
+                  <div class="row align-items-center">
+                     <div class="col-9">
+                        <a href="index.html" target="_blank">
+                           <img src="assets/img/logo/oction-logo-bw.png" alt="Logo">
+                        </a>
+                     </div>
+                     <div class="col-3 text-end"><button class="side-info-close"><i class="fal fa-times"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="mobile-menu d-lg-none fix"></div>
+               <div class="offset-profile-action d-md-none">
+                  <div class="offset-widget mb-40">
+                     <div class="profile-item profile-item-header into-sidebar d-md-none">
+                        <div class="profile-img pos-rel">
+                           <div class="profile-action">
+                              <ul>
+                                 <li><a href="creator-profile-info-personal.html" target="_blank"><i class="fal fa-user"></i>Profile</a>
+                                 </li>
+                                 <li><a href="login.html" target="_blank"><i class="fal fa-sign-out"></i>Logout</a></li>
+                              </ul>
+                           </div>
+                           <img src="assets/img/profile/profile4.jpg" alt="profile-img">
+                           <div class="profile-verification verified">
+                              <i class="fas fa-check"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="offset-widget offset_searchbar mb-30">
+                  <form action="#" class="filter-search-input">
+                     <input type="text" placeholder="Search keyword">
+                     <button><i class="fal fa-search"></i></button>
+                  </form>
+               </div>
+               <div class="offset-widget mb-40">
+                  <a href="#" target="_blank" class="fill-btn">Get your Gal</a>
+               </div>
+               <div class="offset-widget mb-40">
+                  <a href="#" target="_blank" class="fill-btn">Apply for funding</a>
+               </div>
+               <div class="offset-widget mb-40 d-none d-lg-block">
+                  <div class="info-widget">
+                     <h4 class="offset-title mb-20 d-none">Contact Info</h4>
+                     <p class="mb-30">Non-fungible tokens and their smart contracts allow for detailed attributes to be
+                        added, like the identity of the owner,
+                        rich metadata, or secure file links.</p>
+                     <a href="contact.html" target="_blank" class="fill-btn">Contact Us</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="offcanvas-overlay"></div>
+      <div class="offcanvas-overlay-white"></div>
+      <!-- side toggle end -->
+
+      <!-- banner area start  -->
+      <div class="banner-area banner-area1 pos-rel fix">
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="single-banner single-banner-1 banner-900 d-flex align-items-center pos-rel mb-30">
+                     <img src="assets/img/banner/b1-shape1.png" alt="" class="b1-shape1">
+                     <div class="banner-bg" data-background="assets/img/banner/oc-banner-bg.png"></div>
+                     <div class="banner-bg-light" data-background="assets/img/banner/oc-banner-bg-light.png"></div>
+                     <div class="container pos-rel">
+                        <div class="row align-items-center justify-content-between">
+                           <div class="col-xl-6 col-lg-6">
+                              <div class="banner-content banner-content1 banner-content1-1 pt-0">
+                                 <h1 data-animation="fadeInUp" data-delay=".3s" class="mb-25 font-prata">
+                                    Taragals: 1,000 Unique <span style="color: #00a651;">Digital Companions</span></h1>
+                                 <p data-animation="fadeInUp" data-delay=".5s" class="mb-40">The official Soulmates Gals NFT collection features 1,000 unique digital companions within the Taraxa ecosystem. These NFTs combine art and community-driven values, offering a unique experience for collectors and enthusiasts.</p>
+                                 <div class="banner-btn mb-105" data-animation="fadeInUp" data-delay=".7s">
+                                    <a href="explore-arts.html" target="_blank" class="fill-btn">Explore Now</a>
+                                    <div class="oc-banner-video">
+                                       <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" target="_blank" class="popup-video"><i
+                                             class="fas fa-play"></i></a>
+                                       <span>Watch Video</span>
+                                    </div>
+                                 </div>
+                                 <div class="oc-banner-counter">
+                                    <div class="art-meta-item">
+                                       <div class="art-meta-notice">1,000</div>
+                                       <div class="art-meta-type">Unique NFTs</div>
+                                    </div>
+                                    <div class="art-meta-item">
+                                       <div class="art-meta-notice">4</div>
+                                       <div class="art-meta-type">Backing Partners</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-5 col-lg-6">
+                              <div class="oc-banner-img pos-rel">
+                                 <div class="oc-banner-img-1">
+                                    <img class="" data-depth=".5" src="assets/img/art/99.png"
+                                       alt="img not found">
+                                 </div>
+                                 <div class="oc-banner-img-2">
+                                    <img class="" data-depth=".6" src="assets/img/art/958.png"
+                                       alt="img not found">
+                                 </div>
+                                 <div class="oc-banner-img-3">
+                                    <img class="" data-depth=".3" src="assets/img/art/840.png"
+                                       alt="img not found">
+                                 </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="slider-nav d-none">
+               <div class="slider-button-prev"><i class="fal fa-long-arrow-left"></i></div>
+               <div class="slider-button-next"><i class="fal fa-long-arrow-right"></i></div>
+            </div>
+         </div>
+      </div>
+      <!-- banner area end  -->
+
+      <!-- backers section start -->
+      <section class="backers-section">
+         <div class="container">
+            <div class="row wow fadeInUp">
+               <div class="col-12">
+                  <div class="section-title1 pos-rel text-center mb-40">
+                     <h2 class="section-main-title1">Backed By Industry Leaders</h2>
+                     <p>Taragals is proudly supported by trusted partners in the blockchain ecosystem</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row wow fadeInUp justify-content-center align-items-center">
+               <div class="col-md-3 text-center">
+                  <div class="backer-item">
+                     <img src="assets/img/partners/meridian-logo.png" alt="Meridian Logo" class="backer-logo">
+                     <h4>Meridian</h4>
+                     <p>DeFi Provider on EVM</p>
+                  </div>
+               </div>
+               <div class="col-md-3 text-center">
+                  <div class="backer-item">
+                     <img src="assets/img/partners/altura-logo.png" alt="Altura Logo" class="backer-logo">
+                     <h4>Altura</h4>
+                     <p>Leading NFT marketplace platform</p>
+                  </div>
+               </div>
+               <div class="col-md-3 text-center">
+                  <div class="backer-item">
+                     <img src="assets/img/partners/taraswap-logo.png" alt="TaraSwap Logo" class="backer-logo">
+                     <h4>TaraSwap</h4>
+                     <p>Decentralized exchange platform</p>
+                  </div>
+               </div>
+               <div class="col-md-3 text-center">
+                  <div class="backer-item">
+                     <img src="assets/img/partners/laraprotocol-logo.png" alt="LaraProtocol Logo" class="backer-logo">
+                     <h4>LaraProtocol</h4>
+                     <p>Liquid Staking Protocol</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- backers section end -->
+
+      <!-- use of funds section start -->
+      <section class="use-of-funds">
+         <div class="container">
+            <div class="row wow fadeInUp">
+               <div class="col-12">
+                  <div class="section-title1 pos-rel text-center mb-40">
+                     <h2 class="section-main-title1">Use of Funds</h2>
+                     <p>TaraGals strives to be the leading community-driven NFT initiative</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row wow fadeInUp">
+               <div class="col-lg-6 col-md-6">
+                  <div class="fund-item">
+                     <h4><i class="fas fa-calendar-alt"></i> Sponsoring Taraxa Events</h4>
+                     <p>Funding Taraxa side events and meetups to grow the community and increase awareness</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                  <div class="fund-item">
+                     <h4><i class="fas fa-tshirt"></i> Taraxa Merchandise</h4>
+                     <p>Producing Taraxa merchandise—hoodies, t-shirts, mugs, and more for community members</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                  <div class="fund-item">
+                     <h4><i class="fas fa-bullhorn"></i> Marketing Initiatives</h4>
+                     <p>Community members can apply for grants to run campaigns and collaborate with KOLs</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                  <div class="fund-item">
+                     <h4><i class="fas fa-coins"></i> Supporting $GALS Token</h4>
+                     <p>Funding to support and grow the $GALS token ecosystem and utility</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-4">
+               <div class="col-12 text-center">
+                  <p>The majority of funds raised and earned will be dedicated to advancing Taraxa-focused activities and expanding its global reach and awareness.</p>
+                  <a href="#" target="_blank" class="buy-altura-btn mt-4">Buy on Altura</a>
+                  <a href="#" target="_blank" class="apply-funding-btn">Apply for Funding</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- use of funds section end -->
+
+      <!-- Footer area start -->
+      <footer class="footer-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <div class="footer-widget mb-40">
+                     <div class="footer-logo mb-25">
+                        <a href="index.html" target="_blank"><img src="assets/img/logo/taragals-logo-black.png" alt="logo"></a>
+                     </div>
+                     <p style="color: #ffffff;">The official Soulmates Gals NFT collection features 1,000 unique digital companions within the Taraxa ecosystem. These NFTs combine art and community-driven values, offering a unique experience for collectors and enthusiasts.</p>
+                     <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="footer-widget mb-40">
+                     <h4>Quick Links</h4>
+                     <ul>
+                        <li><a href="#" target="_blank">Home</a></li>
+                        <li><a href="#" target="_blank">Marketplace</a></li>
+                        <li><a href="#" target="_blank">Get your Gal</a></li>
+                        <li><a href="#" target="_blank">Apply for funding</a></li>
+                        <li><a href="#" target="_blank">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="footer-widget mb-40">
+                     <h4>Partners</h4>
+                     <ul>
+                        <li><a href="https://www.meridianfinance.net/" target="_blank">Meridian</a></li>
+                        <li><a href="https://app.alturanft.com/" target="_blank">Altura</a></li>
+                        <li><a href="https://www.taraswap.app/#/swap" target="_blank">TaraSwap</a></li>
+                        <li><a href="https://app.laraprotocol.com/" target="_blank">LaraProtocol</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text-center">
+               <p>© 2025 Taragals. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer area end -->
+   </main>
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+   <script src="assets/js/vendor/waypoints.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/owl.carousel.min.js"></script>
+   <script src="assets/js/magnific-popup.min.js"></script>
+   <script src="assets/js/parallax.min.js"></script>
+   <script src="assets/js/backToTop.js"></script>
+   <script src="assets/js/nice-select.min.js"></script>
+   <script src="assets/js/counterup.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
